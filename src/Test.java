@@ -27,11 +27,6 @@ public class Test
         me.getUnit(1).addArmament(new Armament("Laser Cannon", 0,10,0));
         me.getUnit(1).addArmament(new Armament("Sublight Engine", 0,0,5));
 
-        Global.saveUnitBlueprint(me.getUnit(0));
-        me.buildUnit(Global.units.get(0));
-
-        me.getUnit(2).addArmament(new Armament("Sublight Engine", 0,0,15));
-
         Processes.displayFleet(me);
     }
 }
