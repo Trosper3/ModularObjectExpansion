@@ -1,9 +1,10 @@
 package Objects;
 
-public abstract class Object
+public abstract class Object<T extends Thing> extends Thing
 {
-    private int health, damage, speed;
+    private int health, damage, speed, id, cost;
     private String name;
+    private T owner;
 
     protected Object(String name, int health, int damage, int speed)
     {
@@ -17,8 +18,15 @@ public abstract class Object
     public int getHealth() { return health; }
     public int getDamage() { return damage; }
     public int getSpeed() { return speed; }
-    public void setName(String name) { this.name = name; }
-    public void setHealth(int health) { this.health = health; }
-    public void setDamage(int damage) { this.damage = damage; }
-    public void setSpeed(int speed) { this.speed = speed; }
+    public int getID() { return id; }
+    public int getCost() { return cost; }
+    public T getOwner() { return owner; }
+    public void changeName(String name) { this.name = name; }
+    public void adjustHealth(int health) { this.health += health; }
+    public void adjustDamage(int damage) { this.damage += damage; }
+    public void adjustSpeed(int speed) { this.speed += speed; }
+    public void setID(int id) { this.id = id; }
+    public void setCost(int cost) { this.cost = cost; }
+    public void setOwner(T owner) { this.owner = owner; }
+
 }

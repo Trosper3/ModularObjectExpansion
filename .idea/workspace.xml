@@ -4,19 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceae1f3d-bc44-4a99-b7e6-c4179f3bf783" name="Changes" comment="Yes">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpaceObjects.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Objects/Hardpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Objects/Object.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Objects/Objects.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Objects/Unit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+    <list default="true" id="ceae1f3d-bc44-4a99-b7e6-c4179f3bf783" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Objects/Armament.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/Commander.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/Global.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Objects/Thing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Processes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utility/AttackChance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utility/Cost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utility/ID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Objects/Hardpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/Hardpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Objects/Object.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/Object.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Objects/Objects.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Objects/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects/Unit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +52,15 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Run Program" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="SpaceObjects" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,10 +70,20 @@
       <option name="presentableId" value="Default" />
       <updated>1694991207450</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created abstract template for objects&#10;Created unit class&#10;Created hardpoint class&#10;Started objects database">
+      <created>1695048716078</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695048716078</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Yes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Yes" />
+    <MESSAGE value="$ git commit -m initialized" />
+    <MESSAGE value="Created abstract template for objects&#10;Created unit class&#10;Created hardpoint class&#10;Started objects database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created abstract template for objects&#10;Created unit class&#10;Created hardpoint class&#10;Started objects database" />
   </component>
 </project>
