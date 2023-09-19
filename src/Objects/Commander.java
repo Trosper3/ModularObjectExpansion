@@ -15,7 +15,7 @@ public class Commander extends Thing
         newUnit.setOwner(this);
         fleet.add(newUnit);
     }
-    public void removeUnit(Unit unit) { fleet.remove(unit.getID()); }
+    public void removeUnit(Unit unit) { fleet.remove(unit); }
     public Unit getUnit(int position) { return fleet.get(position); }
     public void seeFleet() { System.out.println(this.fleet); }
     public int getMoney() { return money; }

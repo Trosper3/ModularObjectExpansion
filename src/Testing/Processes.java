@@ -1,3 +1,5 @@
+package Testing;
+
 import Objects.Armament;
 import Objects.Commander;
 import Objects.Hardpoint;
@@ -103,6 +105,7 @@ public class Processes
         }
     }
 
+    /*
     public static void addHardpoint(Commander commander, int unitNum)
     {
         if(unitNum == -1)
@@ -116,6 +119,7 @@ public class Processes
             commander.getUnit(unitNum).addHardpoint(new Hardpoint(buildComponents[0],Integer.parseInt(buildComponents[1]),Integer.parseInt(buildComponents[2]),Integer.parseInt(buildComponents[3])));
         }
     }
+    */
 
     public static void addArmament(Commander commander, int unitNum, int hardpointNum)
     {
@@ -163,6 +167,7 @@ public class Processes
             System.out.println("\tHealth: " + commander.getUnit(i).getHealth());
             System.out.println("\tDamage: " + commander.getUnit(i).getDamage());
             System.out.println("\tSpeed: " + commander.getUnit(i).getSpeed());
+            System.out.println();
             System.out.println("\tArmaments:");
             for (int j = 0; j < commander.getUnit(i).getArmamentAmount(); j++)
             {
@@ -171,6 +176,7 @@ public class Processes
                 System.out.println("\t\tDamage: " + commander.getUnit(i).getArmament(j).getDamage());
                 System.out.println("\t\tSpeed: " + commander.getUnit(i).getArmament(j).getSpeed());
             }
+            System.out.println();
             System.out.println("\tHardpoints:");
             for (int k = 0; k < commander.getUnit(i).getHardpointAmount(); k++)
             {

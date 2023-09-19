@@ -1,4 +1,7 @@
+package Testing;
+
 import Objects.Commander;
+import Testing.Processes;
 
 import java.util.Scanner;
 
@@ -21,7 +24,7 @@ public class Program
                             Processes.buildUnit(me);
                             break;
                         case "Hardpoint":
-                            Processes.addHardpoint(me, Processes.unitNumSelection(me));
+                            //Processes.addHardpoint(me, Processes.unitNumSelection(me));
                             break;
                         case "Armament":
                             switch(Processes.objectSelection())
