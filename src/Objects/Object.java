@@ -2,7 +2,7 @@ package Objects;
 
 public abstract class Object<T extends Thing> extends Thing
 {
-    private int health, damage, speed, id, cost;
+    private int health, damage, speed, id, cost, position;
     private String name;
     private T owner;
 
@@ -26,6 +26,7 @@ public abstract class Object<T extends Thing> extends Thing
     public int getSpeed() { return speed; }
     public int getID() { return id; }
     public int getCost() { return cost; }
+    public int getPosition() { return position; }
     public T getOwner() { return owner; }
     public void changeName(String name) { this.name = name; }
     public void adjustHealth(int health) { this.health += health; }
@@ -34,5 +35,6 @@ public abstract class Object<T extends Thing> extends Thing
     public void setID(int id) { this.id = id; }
     public void setCost(int cost) { this.cost = cost; }
     public void setOwner(T owner) { this.owner = owner; }
+    public void setPosition(int position) { this.position = position; }
 
 }

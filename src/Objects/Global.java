@@ -5,16 +5,21 @@ import java.util.HashMap;
 
 public abstract class Global
 {
-    public static HashMap<Integer,Unit> units = new HashMap();
+    public static ArrayList<Unit> units = new ArrayList<>();
     public static HashMap<Integer,Armament> armaments = new HashMap<>();
     public static HashMap<Integer,Hardpoint> hardpoints = new HashMap<>();
     public static HashMap<String,Commander> commanders = new HashMap<>();
     public static ArrayList<Integer> ids = new ArrayList<>();
 
-    public static void removeUnitBlueprint(int id)
+    public static void saveUnitBlueprint(Unit unit)
     {
-        units.remove(id);
-        ids.remove(id);
+        Global.units.add(unit);
+    }
+
+    public static void removeUnitBlueprint(Unit unit)
+    {
+        units.remove(unit);
+        ids.remove(unit.getID());
     }
 
     public static void removeArmamentBlueprint(int id)

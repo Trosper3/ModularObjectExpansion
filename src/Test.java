@@ -1,5 +1,6 @@
 import Objects.Armament;
 import Objects.Commander;
+import Objects.Global;
 import Objects.Hardpoint;
 import Testing.Processes;
 import Testing.Program;
@@ -7,7 +8,7 @@ import Testing.Program;
 public class Test
 {
     // Add Increase and Decrease of User.money
-    // Check Testing.Processes
+    // Globals Are Not Independent of Reference Object
     public static void main(String[] args)
     {
         //Program.runProgram();
@@ -26,7 +27,10 @@ public class Test
         me.getUnit(1).addArmament(new Armament("Laser Cannon", 0,10,0));
         me.getUnit(1).addArmament(new Armament("Sublight Engine", 0,0,5));
 
-        me.getUnit(0).getHardpoint(0).attack(me.getUnit(1));
+        Global.saveUnitBlueprint(me.getUnit(0));
+        me.buildUnit(Global.units.get(0));
+
+        me.getUnit(2).addArmament(new Armament("Sublight Engine", 0,0,15));
 
         Processes.displayFleet(me);
     }

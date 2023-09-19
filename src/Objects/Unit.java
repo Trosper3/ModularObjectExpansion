@@ -16,8 +16,6 @@ public class Unit extends Object
         super(name, health, damage, speed);
         super.setID(ID.assignID());
         super.setCost(Cost.assignCost(this));
-
-        Global.units.put(this.getID(), this);
     }
 
     public void addHardpoint(Hardpoint hardpoint)
