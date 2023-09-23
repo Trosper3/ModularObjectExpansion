@@ -1,3 +1,0 @@
-funcion doit ()
-  
-end
