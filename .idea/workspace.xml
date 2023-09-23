@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceae1f3d-bc44-4a99-b7e6-c4179f3bf783" name="Changes" comment="Compared stored blueprints against custom units to check if independent to each other. Failed test, as are same reference in memory. Will fix.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpaceObjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpaceObjects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Testing/Processes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testing/Processes.java" afterDir="false" />
-    </list>
+    <list default="true" id="ceae1f3d-bc44-4a99-b7e6-c4179f3bf783" name="Changes" comment="Cleaned up redundant or unused code in Testing section" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +92,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695108907853</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created initial MySQL database for holding object data and methods for sending / receiving.">
+      <created>1695504882044</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695504882044</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Cleaned up redundant or unused code in Testing section">
+      <created>1695506265800</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695506265800</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -107,6 +116,9 @@
     <MESSAGE value="Created testing processes and modular runtime class objects" />
     <MESSAGE value="Separated variations on testing and provided example that can be run" />
     <MESSAGE value="Compared stored blueprints against custom units to check if independent to each other. Failed test, as are same reference in memory. Will fix." />
-    <option name="LAST_COMMIT_MESSAGE" value="Compared stored blueprints against custom units to check if independent to each other. Failed test, as are same reference in memory. Will fix." />
+    <MESSAGE value="Created initial MySQL database for holding object data and methods for sending / receiving." />
+    <MESSAGE value="Cleaned up redundant or unused code in Testing section" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up redundant or unused code in Testing section" />
+
   </component>
 </project>
