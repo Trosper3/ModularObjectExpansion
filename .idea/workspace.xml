@@ -119,5 +119,6 @@
     <MESSAGE value="Created initial MySQL database for holding object data and methods for sending / receiving." />
     <MESSAGE value="Cleaned up redundant or unused code in Testing section" />
     <option name="LAST_COMMIT_MESSAGE" value="Cleaned up redundant or unused code in Testing section" />
+
   </component>
 </project>
