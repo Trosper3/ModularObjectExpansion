@@ -5,6 +5,9 @@ import Objects.Commander;
 import Objects.Hardpoint;
 import Objects.Unit;
 
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Processes
@@ -195,5 +198,44 @@ public class Processes
             }
             System.out.println();
         }
+    }
+
+    public static void setData(int id, String name, int health, int damage, int speed) throws SQLException {
+        int size=0;
+        int count=0;
+        String root = "root"; String password = "Solijan3!";
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/units",root,password);
+        PreparedStatement st = con.prepareStatement("insert into units values(" + id + "," + "\"" + name + "\"" + "," + health + "," + damage + "," + speed + ");");
+        System.out.println("insert into units values(" + id + "," + "\"" + name + "\"" + "," + health + "," + damage + "," + speed + ");");
+        st.execute();
+
+        //ArrayList<String> names = new ArrayList<>();
+
+        con.close();
+    }
+
+    public static String getStat(String parameter, int unit_id) throws SQLException
+    {
+        String root = "root"; String password = "Solijan3!";
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/units",root,password);
+        PreparedStatement st = con.prepareStatement("select " + parameter + " from units\n" + "where unit_id = " + unit_id + ";");
+        ResultSet r = st.executeQuery();
+        if (parameter == "health" || parameter == "damage" || parameter == "speed") {
+            while (r.next()) {
+                int temp = r.getInt(parameter);
+                return Integer.toString(temp);
+            }
+        }
+        else if (parameter == "unit_name") {
+            while (r.next()) {
+                String temp = r.getString(parameter);
+                return temp;
+            }
+        }
+        else
+        {
+            return null;
+        }
+        return null;
     }
 }
